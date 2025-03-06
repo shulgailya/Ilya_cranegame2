@@ -61,7 +61,7 @@ function draw() {
     return;
   }
   //background image
-  image(img4,0,0);
+  if(img4!=null){image(img4,0,0);}
   fill('white')
 
   text("Get the yellow squares in to the red zone to collect Points",50,25)
