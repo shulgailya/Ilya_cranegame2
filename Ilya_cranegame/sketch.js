@@ -22,6 +22,14 @@ let bigBlock=false;
 let smallBlock=false;
 
 
+//load images
+function preload() {
+  img = loadImage('/images/carmClosed.png');
+  img2 = loadImage('/images/carmOpen.png');
+  img3 = loadImage('/images/cHead.png');
+  img4 = loadImage('/images/background.jpg');
+}
+
 // for given shape coords, return distance from cranehand
 function DistancefromCrane(shapeX,shapeY){
 
@@ -37,13 +45,6 @@ function keyPressed() {
   }
 }
 
-//load images
-function preload() {
-  img = loadImage('/images/carmClosed.png');
-  img2 = loadImage('/images/carmOpen.png');
-  img3 = loadImage('/images/cHead.png');
-  img4 = loadImage('/images/background.jpg');
-}
 
 function setup() {
   createCanvas(800, 600);
